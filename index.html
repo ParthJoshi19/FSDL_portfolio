@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Joshi - Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #00f3fc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 15px;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #00f3fc !important;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #ccc !important;
+        }
+
+        .section {
+            padding: 80px 0;
+            background-color: #1a1a1a;
+        }
+
+        .name {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .skill-card {
+            background-color: #2c2c2c;
+            padding: 100px;
+            border-radius: 10px;
+            border: 1px solid #444;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            background-color: #333;
+        }
+
+        .projects-section {
+            background-color: #121212;
+        }
+
+        .project-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            width: 18rem;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            background-color: #222;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .testimonials-card {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #444;
+            width: 18rem;
+            transition: 0.3s;
+        }
+
+        .testimonials-card:hover {
+            background-color: #333;
+        }
+
+        .resume-card {
+            background-color: #2c2c2c;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #444;
+        }
+
+        .contact {
+            background-color: #1a1a1a;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #121212;
+            color: #777;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Parth Joshi</a>
+            <ul class="navbar-nav ms-auto gap-4">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="section d-flex justify-content-center align-items-center" id="home"
+        style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdEPdwNssQ_BTq_gEN1oydiKokvqTywmxxA&s'); background-size:cover;">
+        <div class="text-center">
+            <h2 class="text-secondary">Welcome to My Portfolio</h2>
+            <h1 class="name">Parth Joshi</h1>
+        </div>
+    </div>
+
+    <div class="section" id="skills">
+        <div class="container text-center">
+            <h2 class="mb-5">My Skills</h2>
+            <div class="d-flex gap-4 flex-wrap justify-content-center">
+                <div class="skill-card">
+                    <h5>Frontend</h5>
+                    <ul class="list-unstyled text-white">
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h5>Backend</h5>
+                    <ul class="list-unstyled text-white">
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h5>AI / ML</h5>
+                    <ul class="list-unstyled text-white">
+                        <li>Python</li>
+                        <li>YOLO</li>
+                        <li>OpenCV</li>
+                        <li>LLMs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section projects-section" id="projects">
+        <div class="container text-center">
+            <h2 class="mb-5">My Projects</h2>
+            <div class="d-flex gap-4 flex-wrap justify-content-center">
+                <div class="project-card">
+                    <img src="https://parthjoshi.qzz.io/project1.png">
+                    <h5 class="mt-3">ChatPDF</h5>
+                    <p class="text-white">AI powered document interaction platform</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://parthjoshi.qzz.io/borocella.png">
+                    <h5 class="mt-3">BoroCella</h5>
+                    <p class="text-white">Full stack service-based platform</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://trafficinfratech.com/wp-content/uploads/2022/08/New-Project-2022-08-01T122206.059.jpg">
+                    <h5 class="mt-3">Smart Traffic System</h5>
+                    <p class="text-white">AI driven traffic optimization</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="resume">
+        <div class="container text-center">
+            <h2 class="mb-4">Resume</h2>
+            <div class="resume-card mx-auto">
+                <p class="text-white mb-4">
+                    Download my resume to learn more about my education, experience, projects, and technical expertise.
+                </p>
+                <a href="resume.pdf" class="btn btn-outline-info btn-lg" download>
+                    <i class="bi bi-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="testimonials">
+        <div class="container text-center">
+            <h2 class="mb-5">What People Say</h2>
+            <div class="d-flex gap-4 flex-wrap justify-content-center">
+                <div class="testimonials-card">
+                    <p class="text-white">"Parth is an exceptional developer."</p>
+                    <strong>- Malhar Kadam</strong>
+                </div>
+
+                <div class="testimonials-card">
+                    <p class="text-white">"Outstanding technical and creative skills."</p>
+                    <strong>- Shravan Joshi</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p class="text-white">Email: parth.joshi@pccoepune.org</p>
+        <p class="text-white">Phone: 8380982758</p>
+
+        <div class="d-flex gap-5 justify-content-center">
+            <a href="https://github.com/parthjoshi19" class="text-white"><i class="bi bi-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/parth-joshi-9ab997306" class="text-white"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="https://www.instagram.com/parth_joshi999/" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Parth Joshi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
